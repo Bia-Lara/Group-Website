@@ -92,7 +92,7 @@ export default function ListDataPage() {
                     setValue={setSelectedKey}
                     onValueChange={setSearchValue}
                     onPress={handleSearch}
-                    options={user.is_staff ? admOptions : userOptions}
+                    options={admOptions }
                 />
                 <div className="px-10 mb-12">
                     {
@@ -106,8 +106,10 @@ export default function ListDataPage() {
                                 </div>)
                                 : (
                                     <div className="grid grid-cols-5 justify-items-center gap-5">
-                                        {resultList.map((e, i) => <DataCard type={dataType} data={e} key={i} loadData={loadData} url={url} isStaff={user.is_staff} />)}
+                                        {resultList.map((e, i) => <DataCard type={dataType} data={e} key={i} loadData={loadData} url={url} />)} 
+                                        
                                     </div>
+                                    //isStaff={user.is_staff}
                                 )
                     }
                 </div>

@@ -7,7 +7,8 @@ const ProtectedRoute = ({ isStaffRequired }) => {
 
   if (!token) return <Navigate to="/login" />;
   const user = getUser();
-  if (isStaffRequired && !user.is_staff) return <Navigate to="/organisms" />
+  
+  // if (isStaffRequired && !user.is_staff) return <Navigate to="/organisms" />
 
   return <Outlet />;
 };

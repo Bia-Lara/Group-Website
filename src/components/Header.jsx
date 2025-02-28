@@ -53,7 +53,7 @@ export default function Header(props) {
         </div>
         <SelectNavigation
           isRequired={false}
-          options={user.is_staff ? admOptions : userOptions}
+          options={admOptions}//user.is_staff ? admOptions : userOptions}
           onChange={setSelected}
           defaultSelectedKeys={selected}
         />

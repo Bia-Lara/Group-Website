@@ -43,7 +43,7 @@ export default function DataCard(props) {
       <div className="divider"></div>
       <div className="flex justify-center items-center gap-5 p-3 min-w-72">
         {
-          props.isStaff && props.type === "organism" &&
+          props.type === "organism" &&
           (
             <>
               <ButtonComponent
@@ -61,7 +61,7 @@ export default function DataCard(props) {
             </>
           )
         }
-        {props.isStaff && (
+        
           <>
             <ButtonComponent
               icon={<ExcludeIcon className='size-6' />}
@@ -79,7 +79,7 @@ export default function DataCard(props) {
                 setOptionOpen(false);
               }}
             />
-          </>)}
+          </>
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ import { logoutUser } from "../services/authService";
 import { getUser } from "../services/userService";
 
 export default function AvatarComponent(props) {
-  const user = getUser()
+  const user = true
   const navigate = useNavigate();
   return (
     <div className="flex items-center gap-4">

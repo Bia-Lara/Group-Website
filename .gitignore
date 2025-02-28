@@ -62,3 +62,4 @@ desktop.ini
 **/Dockerfile
 **/docker-compose.yml
 
+.nodeModules

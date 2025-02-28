@@ -27,11 +27,11 @@ import { isAuthenticated } from "./services/authService.js";
 const router = createBrowserRouter([
   {
     path: "/login",
-    element: isAuthenticated() ? <Navigate to={"/admin/history"} /> : <LoginPage />,
+    element:<LoginPage />, // isAuthenticated() ? <Navigate to={"/admin/history"} /> : <LoginPage />,
   },
   {
     path: "/admin",
-    element: <ProtectedRoute isStaffRequired={true} />,
+    element: <ProtectedRoute/>, //isStaffRequired={true} />,
     children: [
       {
         path: "history",
